@@ -9,5 +9,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('vendor/', include('vendor.urls')),
     
+    
 ]
  

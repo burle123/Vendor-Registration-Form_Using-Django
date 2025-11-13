@@ -13,15 +13,51 @@
       justify-content: center;
       color: white;
       text-align: center;
+      margin: 0;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 60px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1.2s ease;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .login-btn {
+      display: inline-block;
+      background: white;
+      color: #007bff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      background: #f1f1f1;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div>
+  <div class="container">
     <h1>✅ Registration Successful!</h1>
     <p>Thank you for registering as a vendor with our E-Waste Management System.</p>
-    <a href="/vendor/registration/" style="color:white; text-decoration:underline;">Register another vendor</a>
+    <p><a href="/vendor/registration/">Register another vendor</a></p>
+    <a href="/vendor/login/" class="login-btn">Login Now</a>
   </div>
 </body>
 </html>
-
